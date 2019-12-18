@@ -43,6 +43,7 @@ module.exports = function createWindow(options) {
   let win = new BrowserWindow({
     webPreferences: {
       preload: preloadPath,
+      nodeIntegration: true
     },
     icon: path.join(__dirname, 'assets/app-icon/png/512.png'),
     width: windowOptions.width,
